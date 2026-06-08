@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Premium luxury gold palette */
+  --color-gold-50: #fbf9f1;
+  --color-gold-100: #f4edd4;
+  --color-gold-200: #e9daa9;
+  --color-gold-300: #dbbf74;
+  --color-gold-400: #cca148;
+  --color-gold-500: #b58932;
+  --color-gold-600: #9c7028;
+  --color-gold-700: #7d5420;
+  --color-gold-800: #65431c;
+  --color-gold-900: #543719;
+  --color-gold-950: #301d0c;
+}
+
+@layer utilities {
+  /* Scrollbar hide utility if needed */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+  background: rgba(10, 10, 10, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(15, 15, 15, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-premium {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.7) 0%, rgba(10, 10, 10, 0.9) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: #030303;
+  color: #f3f4f6;
+  overflow-x: hidden;
+}
+
+/* Marquee / Auto scrolling smooth keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

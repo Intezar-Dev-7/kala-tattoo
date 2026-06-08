@@ -1,0 +1,6 @@
+{
+  "name": "Kala Tattoo Studio",
+  "description": "Professional Tattoo Studio in Arambol, Goa. Specializing in Custom, Realism, Fine Line, Mandala, Cover-Up, and Spiritual tattoos. Ink with meaning, art with soul.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
