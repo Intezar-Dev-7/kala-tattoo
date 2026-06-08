@@ -1,14 +1,19 @@
 import { TattooItem, ServiceItem, ReviewItem, FaqItem } from "./types";
+import heroImage from "./assets/images/kala_hero_1780905791858.png";
+import realismImage from "./assets/images/realism_tattoo_1780905809680.png";
+import mandalaImage from "./assets/images/mandala_tattoo_1780905825043.png";
+import finelineImage from "./assets/images/fineline_tattoo_1780905841157.png";
+import coverupImage from "./assets/images/coverup_tattoo_1780905858552.png";
 
 // Custom generated asset paths
 export const IMAGES = {
-  hero: "/src/assets/images/kala_hero_1780905791858.png",
-  realism: "/src/assets/images/realism_tattoo_1780905809680.png",
-  mandala: "/src/assets/images/mandala_tattoo_1780905825043.png",
-  fineline: "/src/assets/images/fineline_tattoo_1780905841157.png",
-  coverup: "/src/assets/images/coverup_tattoo_1780905858552.png",
-  // A dark fading template used to show a faded "before" tattoo state in cover-up
-  coverupBefore: "https://images.unsplash.com/photo-1590156546746-c224083a8f6e?auto=format&fit=crop&q=70&w=600",
+  hero: heroImage,
+  realism: realismImage,
+  mandala: mandalaImage,
+  fineline: finelineImage,
+  coverup: coverupImage,
+  coverupBefore:
+    "https://images.unsplash.com/photo-1590156546746-c224083a8f6e?auto=format&fit=crop&q=70&w=600",
 };
 
 export const SERVICES: ServiceItem[] = [
